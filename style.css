@@ -1,0 +1,135 @@
+/* index.html */
+.header {
+    height: 100%;
+    width: 100%;
+    background-color: turquoise;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        text-align: center;
+    }
+    .navlist ul {
+        list-style-type: none;
+        text-align: center; 
+    }
+
+    .navlist li a{
+        display: block;
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    .navlist li a:hover {
+        text-align: center;
+        color: white;
+        padding: 8px 16px;
+        background-color: #555;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .navlist ul {
+        overflow: hidden;
+        margin: auto;
+        width: 100%;
+        list-style-type: none;
+        text-align: center; 
+    }
+
+    .navlist li{
+        display: inline;
+    }
+
+    .navlist li a{
+        text-align: center;
+        color: black;
+        margin: 10px;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    .navlist li a:hover {
+        text-align: center;
+        color: white;
+        padding: 8px 16px;
+        background-color: #555;
+    }
+}
+
+.footercontent {
+    width: 100%;
+    bottom: 10px;
+    background-color: turquoise;
+    margin: auto;
+    text-align: center;
+}
+
+/* ourbusiness.html */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    width: 400px;
+    margin: 10px;
+}
+
+/* contact.html */
+legend {
+    font-size: 30px;
+}
+
+input[type=text], [type=email] {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: turquoise;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+input[type=submit]:hover{
+    background-color: lightblue;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* contactreply.html */
+.message_reply {
+    margin: 100px;
+    top: 100px;
+    font-size: 25px;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+/* gallery.html */
+.col-md-4{
+    margin:15px;
+    text-align: left;
+}
